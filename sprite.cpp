@@ -1,10 +1,9 @@
 #include "sprite.h"
 #include <fstream>
+#include <iostream>
 #include <ncurses.h>
 #include <sstream>
-#include <iostream>
 #include <string>
-
 
 using namespace std;
 const std::string SEPARATOR = "\n;\n";
@@ -32,11 +31,6 @@ std::string Sprite::getNextFrame() {
     index++;
     return frame;
   } else {
-    return "\\0";
+    return framesCache[framesCache.size() - 1];
   }
-}
-
-std::string Sprite::printNextFrame() {
-  index++;
-  return framesCache[index];
 }

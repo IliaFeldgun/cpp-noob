@@ -16,3 +16,6 @@ sprite.o: sprite.cpp sprite.h
 .PHONY: clean all
 clean:
 	rm -f *.o *.out
+
+record:
+	asciinema rec -c "make && ./main.out"

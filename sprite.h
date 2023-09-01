@@ -1,8 +1,7 @@
 #pragma once
+#include <ncurses.h>
 #include <string>
 #include <vector>
-#include <string>
-#include <ncurses.h>
 
 class Sprite {
 public:
@@ -12,5 +11,4 @@ public:
   bool isFinished = false;
   Sprite(const std::string filePath);
   std::string getNextFrame();
-  std::string printNextFrame();
 };

@@ -1,6 +1,6 @@
 # cpp-noob
 
-[![asciicast](https://asciinema.org/a/d7DHHwwuyOVXfTimhSCzGlrRY.svg?t=1)](https://asciinema.org/a/d7DHHwwuyOVXfTimhSCzGlrRY?t=1)
+[![asciicast](https://asciinema.org/a/UTCPaqKGcWPjI86d2xzEHQgTC.svg?t=1)](https://asciinema.org/a/UTCPaqKGcWPjI86d2xzEHQgTC?t=0)
 
 ### Install using 
 ```bash
