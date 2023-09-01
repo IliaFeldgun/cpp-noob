@@ -9,6 +9,11 @@ sudo apt-get install build-essential manpages-dev
 g++ --version
 make --version
 ```
+```bash
+sudo dnf install gcc-c++
+g++ --version
+make --version
+```
 
 ### Run using
 ```bash
