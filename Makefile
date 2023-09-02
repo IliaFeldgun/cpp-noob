@@ -17,11 +17,12 @@ sprite.o: sprite.cpp sprite.h
 clean:
 	rm -f *.o *.out
 
-record:
-	asciinema rec -c "make && ./main.out"
+demo/cpp-noob.cast: main.out
+	mkdir -p demo
+	asciinema rec -c "make && ./$<" $@
 
-replace_recording:
-ifndef ASC_URL
-	$(error ASC_URL is not set)
-endif
-	sed -i 's/https:\/\/asciinema.org\/a\/\w\+/$(ASC_URL)/g' README.md
+demo/cpp-noob-asciinema.gif: demo/cpp-noob.cast
+	agg $< $@ || rm $@
+
+record: demo/cpp-noob-asciinema.gif
+	echo "Recorded! $<"
