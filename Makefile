@@ -19,3 +19,9 @@ clean:
 
 record:
 	asciinema rec -c "make && ./main.out"
+
+replace_recording:
+ifndef ASC_URL
+	$(error ASC_URL is not set)
+endif
+	sed -i 's/https:\/\/asciinema.org\/a\/\w\+/$(ASC_URL)/g' README.md
